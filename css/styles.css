@@ -1,0 +1,47 @@
+header{
+    width: 5rem;
+    background-color: #8CBCE9;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    background-color:#8CBCE9;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 40rem;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color:#8CBCE9;
+    align-items: flex-end;
+}
+
+#primeiroCard{
+    display:flex;
+    justify-content: space-between;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    width: 5rem;
+}
+
+footer{
+    position:fixed;
+    bottom:0px
+}
