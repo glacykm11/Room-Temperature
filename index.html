@@ -17,13 +17,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js"></script>
     <script src="https://www.gstatic.com/charts/loader.js"></script>
   </head>
+
   <body onload="MQTTConnect()">
     <header class="container-fluid">
       <h1>Dashboard</h1>
     </header>
 
     <main>
-      <section id="primeiroCard" class="container">
+      <section id="cardInicial" class="container">
         <article>
           <img id="snowIcon" src="images/snow.svg" />
         </article>
@@ -44,17 +45,21 @@
         </article>
       </section>
 
-      <section class="container">
-        <article>
-          <h2>Gráfico</h2>
-          <!-- <img src="images/grafico.png" style="width: 35rem" /> -->
-          <div id="temp_chart" style="width: 400px; height: 400px"></div>
-        </article>
-      </section>
-      <section class="container">
-        <article>
-          <div id="line" style="width: 666px; height: 400px"></div>
-        </article>
+      <section id="secaoCards">
+        <section id="cardTemperatura" class="container">
+          <article>
+            <h2>Temperatura</h2>
+            <!-- <img src="images/grafico.png" style="width: 35rem" /> -->
+            <div id="temp_chart" style="width: 200px"></div>
+          </article>
+        </section>
+
+        <section id="cardGrafico" class="container">
+          <article>
+            <h3>Gráfico</h3>
+            <div id="line" style="width: 600px; height: 300px"></div>
+          </article>
+        </section>
       </section>
     </main>
 
@@ -62,5 +67,6 @@
       <p>Desenvolvedoras: Glacy, Gabrielly, Gizele e Rayna &copy 2021</p>
     </footer>
   </body>
+
   <script src="js/mqtt.js"></script>
 </html>
