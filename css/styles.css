@@ -1,5 +1,4 @@
 header {
-  width: 5rem;
   background-color: #8cbce9;
 }
 
@@ -10,7 +9,6 @@ header {
   margin: 2rem;
   padding: 2rem;
   border-radius: 1rem;
-  width: 45rem;
 }
 
 .container-fluid {
@@ -26,9 +24,36 @@ footer {
   align-items: flex-end;
 }
 
-#primeiroCard {
+#cardInicial {
   display: flex;
   justify-content: space-between;
+  width: 60rem;
+}
+#cardTemperatura:hover {
+  background-color: #E25822;
+  top:-2px;
+  box-shadow:2px 3px 2px #666;
+}
+
+#cardGrafico:hover {
+  background-color: #E25822;
+  top:-2px;
+  box-shadow:2px 3px 2px #666;
+}
+
+
+#cardTemperatura{
+  width: 20rem;
+}
+
+#cardGrafico{
+  width: 40rem;
+}
+
+#secaoCards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 main {
@@ -50,6 +75,8 @@ footer {
   display: flex;
   align-items: center;
 }
+
 #temp {
   font-size: 4rem;
 }
+
